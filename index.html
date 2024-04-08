@@ -10,13 +10,18 @@
 <body>
   <header>
     <h1>素数の抽出</h1>
+    <h2>最大値を入力して「生成」ボタンを押すと<br>最大値までの素数が出てきます。</h2>
   </header>
   <main>
-    <label for="max-value">最大値</label>
-    <input type="number" id="max-value">
-    <button type="button" onclick="generatePrimes()">生成</button>
+    <div id="input">
+      <label for="max-value">最大値</label>
+      <input type="number" id="max-value">
+      <button type="button" id="g-button" onclick="generatePrimes()">生成</button>
+      <button type="button" id="c-button" onclick="clearInput()">クリア</button>
+    </div>
     <ul style="list-style-type: none;"></ul>
     <ul id="prime-list" style="list-style: none;"></ul>
+    
     <script src="main.js"></script>  
   </main>
   <footer>

@@ -23,3 +23,7 @@ function generatePrimes() {
     }
   }
 }
+function clearInput() {
+  document.getElementById("max-value").value = "";
+  document.getElementById("prime-list").innerHTML = "";
+}
